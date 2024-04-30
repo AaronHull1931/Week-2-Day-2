@@ -11,7 +11,6 @@ body {
     background-color: #ffcc00;
     padding: 10px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding: 20px;
     margin: 0 auto;
     
 }
@@ -23,8 +22,8 @@ a {
     font-size: 20px;
 }
 h1 {
-    float:left;
-    padding: 10px;
+    display:flex;
+    justify-content: flex-start;
 }
 h3 {
     padding: 15px;
@@ -36,15 +35,20 @@ p {
 
 #maincontent {
     text-align: center;
+    display:flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
-#contentcontainer {
-    display: inline-block;
+#contentcontainer {  
+    display:flex;
+    flex-wrap: wrap;
     padding: 30px;
     margin: 10 px;
-    text-wrap: wrap;
 }
 .content {
-    float: left;
+    display:flex;
+    flex-wrap: wrap;
     padding: 20px;
     margin: 10px;
     border: 3px solid #ffcc00;
